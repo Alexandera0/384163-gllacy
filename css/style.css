@@ -1,0 +1,58 @@
+body {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+nav p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+nav b {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 61px;
+}
+
+.main-block .button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size:35px;
+  line-height: 41px;
+}
+
+.stock p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.stock a {
+  font-size: 18px;
+  line-height: 24px;
+}
+.hit a{
+  line-height: 22px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
