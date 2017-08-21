@@ -7,8 +7,7 @@
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header-logo"> <img src="img/logo.svg"
-                                    alt="Логотип магазина мороженого"></a>
+  <a class="main-header-logo"> <img src="img/logo.svg" alt="Логотип магазина мороженого" width="150" height="50"></a>
   <nav class="main-navigation">
     <ul class="site-navigation">
       <li><a href="#">Каталог</a>
@@ -24,19 +23,25 @@
       <li><a href="about_company.html">О компании</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a href="#" class="button-search"><img src="img/loupe.svg" alt="поиск"></a>
+      <li><a href="#" class="button-search"><img src="img/loupe.svg" alt="Поиск" width="30" height="30"></a>
         <ul class="dropdown-menu">
           <li>
-            <input class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
+            <label for="search-id">
+            <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
+            </label>
           </li>
         </ul>
       </li>
-      <li><a href="#" class="button-login"><img src="img/entrance.svg">Вход</a>
+      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a>
         <ul class=" dropdown-menu">
           <li>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
-              <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+              <label for="email-id">
+                <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
+              </label>
+              <label for="password-id">
+                <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+              </label>
               <button class="button" type="submit">Войти</button>
               <p class="login-password-info">
                 <a class="restore" href="#">Забыли пароль?</a>
@@ -46,7 +51,7 @@
           </li>
         </ul>
       </li>
-      <li><a href="#" class="button-basket"><img src="img/basket.svg" alt=" Корзина">Пусто</a></li>
+      <li><a href="#" class="button-basket"><img src="img/basket.svg" alt=" Корзина" width="30" height="30">Пусто</a></li>
     </ul>
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
@@ -62,7 +67,7 @@
   </section>
 
   <section class="share">
-    <h2 class="invisible">Акции</h2>
+    <h2 class="visually-hidden">Акции</h2>
     <ul class="stocks">
       <li class="stock">
         <h2>Малинка даром</h2>
@@ -79,7 +84,7 @@
   </section>
 
   <section class="hit">
-    <h2 class="invisible">Хиты</h2>
+    <h2 class="visually-hidden">Хиты</h2>
     <ul class="products">
       <li>
         <p class="product-item">
@@ -116,22 +121,22 @@
     <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h3>
     <ul class="advantages">
       <li class="advantage-icon">
-        <img src="img/icon-ice-cream-main.svg" height="20" width="20">
+        <img src="img/icon-ice-cream-main.svg" height="20" width="20" alt="Иконка-1">
         Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
         проверенных временем технологий.
       </li>
       <li class="advantage-icon">
-        <img src="img/icon-leaf-main.svg" height="20" width="20">
+        <img src="img/icon-leaf-main.svg" height="20" width="20" alt="Иконка-2">
         Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
         ингредиенты и добавки произведены из натурального, экологически чистого сырья
       </li>
       <li class="advantage-icon">
-        <img src="img/icon-cow-main.svg" height="20" width="20">
+        <img src="img/icon-cow-main.svg" height="20" width="20" alt="Иконка-3">
         Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
         долговременное сотрудничество.
       </li>
       <li class="advantage-icon">
-        <img src="img/icon-thermometer-main.svg" height="20" width="20">
+        <img src="img/icon-thermometer-main.svg" height="20" width="20" alt="Иконка-4">
         Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
         растаять в пути и позволяет сохранить превосходный вкус.
       </li>
@@ -139,23 +144,25 @@
   </section>
 
   <article class="news">
-    <h2 class="invisible">Новости</h2>
+    <h2 class="visually-hidden">Новости</h2>
     <p>Новое в нашем блоке</p>
     <a href="news.html">10 способов сервировки фруктовых щербетов к столу</a>
   </article>
 
   <section class="email">
-    <h2 class="invisible">Подписка</h2>
+    <h2 class="visually-hidden">Подписка</h2>
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
       не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="email" placeholder="Электронная почта">
+      <label for="email-1-id">
+      <input id="email-1-id" type="email" placeholder="Электронная почта">
+      </label>
       <button type="submit" class="button">Отправить</button>
     </form>
   </section>
 
   <section class="contacts-block">
-    <h2 class="invisible">Контакты</h2>
+    <h2 class="visually-hidden">Контакты</h2>
     <p>
       Адрес главного офиса и офлайн магазина:<br></p>
     <address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
@@ -171,10 +178,10 @@
 <footer class="main-footer">
   <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#"><img src="img/twitter.svg" alt=" твиттер"></a></li>
-      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм"></a></li>
-      <li><a class="social-button" href="#"><img src="img/fb.svg" alt="фэйсбук"></a></li>
-      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/twitter.svg" alt=" твиттер" height="50" width="50"></a></li>
+      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм" height="50" width="50"></a></li>
+      <li><a class="social-button" href="#"><img src="img/fb.svg" alt="фэйсбук" height="50" width="50"></a></li>
+      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте" height="50" width="50"></a></li>
     </ul>
   </div>
   <div>
