@@ -10,49 +10,41 @@
   <a class="main-header-logo"> <img src="img/logo.svg" alt="Логотип магазина мороженого" width="150" height="50"></a>
   <nav class="main-navigation">
     <ul class="site-navigation">
-      <li><a href="#">Каталог</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Новинки</a></li>
-          <li><a href="catalog-creamy.html">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-      </li>
+      <li><a href="#">Каталог</a></li>
       <li><a href="payment.html">Доставка и оплата</a></li>
       <li><a href="about_company.html">О компании</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a href="#" class="button-search"><img src="img/loupe.svg" alt="Поиск" width="30" height="30"></a>
-        <ul class="dropdown-menu">
-          <li>
-            <label for="search-id">
-            <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
-            </label>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a>
-        <ul class=" dropdown-menu">
-          <li>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email-id">
-                <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label for="password-id">
-                <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
-              </label>
-              <button class="button" type="submit">Войти</button>
-              <p class="login-password-info">
-                <a class="restore" href="#">Забыли пароль?</a>
-                <a class="registration" href="#">Новая регистрация</a>
-              </p>
-            </form>
-          </li>
-        </ul>
-      </li>
+      <li><a href="#" class="button-search">Поиск</a></li>
+      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a></li>
       <li><a href="#" class="button-basket"><img src="img/basket.svg" alt=" Корзина" width="30" height="30">Пусто</a></li>
     </ul>
+    <div class="dropdown-menu">
+    <ul>
+      <li><a href="#">Новинки</a></li>
+      <li><a href="catalog-creamy.html">Сливочное</a></li>
+      <li><a href="#">Щербеты</a></li>
+      <li><a href="#">Фруктовый лед</a></li>
+      <li><a href="#">Мелорин</a></li>
+    </ul>
+    </div>
+    <div>
+        <label for="search-id" class="visually-hidden">Что ищем?</label>
+          <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
+    </div>
+    <div class=" dropdown-menu">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="email-id" class="visually-hidden">Электронная почта</label>
+            <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
+          <label for="password-id" class="visually-hidden">Пароль</label>
+            <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <button class="button" type="submit">Войти</button>
+          <p class="login-password-info">
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </p>
+        </form>
+    </div>
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
       <b>8 812 450-25-25</b>
@@ -154,9 +146,8 @@
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
       не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="email-1-id">
+      <label for="email-1-id" class="visually-hidden">Электронная почта</label>
       <input id="email-1-id" type="email" placeholder="Электронная почта">
-      </label>
       <button type="submit" class="button">Отправить</button>
     </form>
   </section>
@@ -178,10 +169,10 @@
 <footer class="main-footer">
   <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#"><img src="img/twitter.svg" alt=" твиттер" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/fb.svg" alt="фэйсбук" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте" height="50" width="50"></a></li>
+      <li><a class="social-button visually-hidden" href="#">Твиттер</a></li>
+      <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
+      <li><a class="social-button visually-hidden" href="#">Фэйсбук</a></li>
+      <li><a class="social-button visually-hidden" href="#">Вконтакте</a></li>
     </ul>
   </div>
   <div>

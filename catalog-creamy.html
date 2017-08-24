@@ -10,72 +10,61 @@
   <nav class="main-navigation">
     <a class="main-header-logo" href="index.html"> <img src="img/logo.svg" width="150" height="50" alt=" Логотип магазина мороженого"></a>
     <ul class="site-navigation">
-      <li><a href="catalog-creamy.html" class="checked">Каталог</a>
-        <ul class="hover">
-          <li><a href="#">Новинки</a></li>
-          <li class="checked-group"><a href="#">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-      </li>
+      <li><a href="catalog-creamy.html" class="checked">Каталог</a></li>
       <li><a href="#">Доставка и оплата</a></li>
       <li><a href="about_company.html">О компании</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a href="#" class="button-search"><img src="img/loupe.svg" width="30" height="30" alt="Поиск"></a>
-        <ul class=" dropdown-menu">
-          <li>
-            <label for="search-id">
-            <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
-            </label>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a>
-        <ul class=" dropdown-menu">
-          <li>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email-id">
-              <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label for="password-id">
-              <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
-              </label>
-              <button class="button" type="submit">Войти</button>
-              <p class="login-password-info">
-                <a class="restore" href="#">Забыли пароль?</a>
-                <a class="registration" href="#">Новая регистрация</a>
-              </p>
-            </form>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#" class="button-basket"><img src="img/basket-red.svg" width="30" height="30" alt=" Корзина">2 товара</a>
-        <ul class="dropdown-menu">
-          <li>
-            <table>
-              <tr>
-                <td class="delete"><button class="button" type="submit"><img src="img/cross-big.svg" width="15" height="15" alt="Закрыть"></button></td>
-                <td><img src="img/product-item-1-main.jpg" height="50" width="50" alt="Пломбир с апельсиновым джемом"></td>
-                <td><a href="item.html">Пломбир с апельсиновым джемом</a></td>
-                <td><strong>1,5кг</strong> х 200руб.</td>
-                <td>300руб.</td>
-              </tr>
-              <tr>
-                <td class="delete"><button class="button" type="submit"><img src="img/cross-big.svg" width="15" height="15" alt="Закрыть"></button></td>
-                <td><img src="img/product-item-3-main.jpg" height="50" width="50" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td><a href="item.html">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                <td><strong>1,5кг</strong> х 300руб.</td>
-                <td>450руб.</td>
-              </tr>
-            </table>
-            <p><strong>Итого: 750руб.</strong></p>
-            <a href="order.html" class="button">Оформить заказ</a>
-          </li>
-        </ul>
-      </li>
+      <li><a href="#" class="button-search">Поиск</a></li>
+      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a></li>
+      <li><a href="#" class="button-basket"><img src="img/basket-red.svg" width="30" height="30" alt=" Корзина">2 товара</a></li>
     </ul>
+    <div>
+    <ul class="dropdown-menu">
+      <li><a href="#">Новинки</a></li>
+      <li class="checked-group"><a href="#">Сливочное</a></li>
+      <li><a href="#">Щербеты</a></li>
+      <li><a href="#">Фруктовый лед</a></li>
+      <li><a href="#">Мелорин</a></li>
+    </ul>
+    </div>
+    <div class=" dropdown-menu">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="email-id" class="visually-hidden">Электронная почта</label>
+            <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
+          <label for="password-id" class="visually-hidden">Пароль</label>
+            <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <button class="button" type="submit">Войти</button>
+          <p class="login-password-info">
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </p>
+        </form>
+    </div>
+    <div class=" dropdown-menu">
+        <label for="search-id" class="visually-hidden">Что ищем?</label>
+          <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
+    </div>
+    <div class="dropdown-menu">
+        <table>
+          <tr>
+            <td class="delete"><button class="button" type="button"><img src="img/cross-big.svg" width="15" height="15" alt="Удалить"></button></td>
+            <td><img src="img/product-item-1-main.jpg" height="50" width="50" alt="Пломбир с апельсиновым джемом"></td>
+            <td><a href="item.html">Пломбир с апельсиновым джемом</a></td>
+            <td><strong>1,5кг</strong> х 200руб.</td>
+            <td>300руб.</td>
+          </tr>
+          <tr>
+            <td class="delete"><button class="button" type="button"><img src="img/cross-big.svg" width="15" height="15" alt="Удалить"></button></td>
+            <td><img src="img/product-item-3-main.jpg" height="50" width="50" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+            <td><a href="item.html">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+            <td><strong>1,5кг</strong> х 300руб.</td>
+            <td>450руб.</td>
+          </tr>
+        </table>
+        <p><strong>Итого: 750руб.</strong></p>
+      <button class="button" type="submit">Оформить заказ</button>
+    </div>
     <p class="header-contacts">
       с 10 до 20, ежедневно<br>
       <b>8 812 450-25-25</b>
@@ -108,12 +97,12 @@
       </fieldset>
 
       <fieldset>
-        <legend><label for="radio-fat-id">Жирность:</label></legend>
+        <legend><label for="radio-fat-0-id">Жирность:</label></legend>
         <ul>
-          <li><input id="radio-fat-id" type="radio" value="0" name="0">0%</li>
-          <li><input type="radio" value="10" name="10" checked>до 10%</li>
-          <li><input type="radio" value="<30" name="<30">до 30%</li>
-          <li><input type="radio" value=">30" name=">30">выше 30%</li>
+          <li><input id="radio-fat-0-id" type="radio" value="0" name="0"><label for="radio-fat-0-id">0%</label></li>
+          <li><input id="radio-fat-10-id" type="radio" value="10" name="10" checked><label for="radio-fat-10-id">до 10%</label></li>
+          <li><input id="radio-fat-30-id" type="radio" value="<30" name="<30"><label for="radio-fat-30-id">до 30%</label></li>
+          <li><input id="radio-fat-more-30-id" type="radio" value=">30" name=">30"><label for="radio-fat-more-30-id">выше 30%</label></li>
         </ul>
       </fieldset>
 
@@ -137,9 +126,8 @@
           </li>
         </ul>
       </fieldset>
-<label for="use-id">
+<label for="use-id" class="visually-hidden">Применить</label>
       <input id="use-id" type="button" value="Применить">
-</label>
     </form>
   </section>
 
@@ -234,10 +222,10 @@
 <footer class="main-footer">
   <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="твиттер" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/fb.svg" alt="фэйсбук" height="50" width="50"></a></li>
-      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте" height="50" width="50"></a></li>
+      <li><a class="social-button visually-hidden" href="#">Твиттер</a></li>
+      <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
+      <li><a class="social-button visually-hidden" href="#">Фэйсбук</a></li>
+      <li><a class="social-button visually-hidden" href="#">Вконтакте</a></li>
     </ul>
   </div>
   <div>
