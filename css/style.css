@@ -1,9 +1,61 @@
 body {
-  font-family: "Roboto";
+  font-family: "Roboto:700", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  background: #849d8f no-repeat;
+}
+
+.index-page {
+  background-image:  url("../img/background-main.jpg");
+}
+
+a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:hover, a:focus, a:active {
+  color: #f07963;
+}
+
+ul {
+  list-style: none;
+}
+
+button, .button {
+  background-color: #ed5c3e;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+}
+
+button:hover, .button:hover{
+  background-color: #f07a63;
+  color: #ffffff;
+}
+
+button:active, button:focus, .button:active, .button:focus {
+  color: #ffffff;
+  background-color: #dc5639;
+}
+
+.button-search {
+  background: rgba(0,0,0,0.1) url("../img/loupe.svg") no-repeat;
+}
+
+.main-header .dropdown-menu:first-child a:hover {
+  background-color: #fbded7;
+}
+
+.news a:hover, .news a:active, .news a:focus {
+  color: #ee5d3e;
+}
+
+.main-header .dropdown-menu:first-child a:active, .main-header .dropdown-menu:first-child a:focus {
+  background-color: #f6b5a5;
 }
 
 .user-navigation {
@@ -22,6 +74,158 @@ nav b {
   line-height: 24px;
 }
 
+.main-block {
+  text-align: center;
+}
+
+.stock:first-child {
+  background: #b01644 url("../img/raspberry-background-main.jpg") no-repeat;
+}
+
+.stock:last-child {
+  background: #3b231c url("../img/chocolate-background-main.jpg") no-repeat;
+}
+
+.product-item {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.product-item a, .advantage-icon, .news p, .email p {
+  line-height: 22px;
+  font-family: "Roboto:400", sans-serif;
+}
+
+li:first-child .product-item {
+  background: #fdac35 url("../img/product-item-1-main.jpg") no-repeat;
+}
+
+li:nth-child(2) .product-item{
+  background: #8b3918 url("../img/product-item-2-main.jpg") no-repeat;
+}
+
+li:nth-child(3) .product-item{
+  background: #ee7699 url("../img/product-item-3-main.jpg") no-repeat;
+}
+
+li:nth-child(4) .product-item{
+  background: #e5bc80 url("../img/product-item-4-main.jpg") no-repeat;
+}
+
+li:nth-child(5) .product-item{
+  background: #e5bc80 url("../img/product-item-5-main.jpg") no-repeat;
+}
+
+li:nth-child(6) .product-item{
+  background: #e5bc80 url("../img/product-item-6-main.jpg") no-repeat;
+}
+
+li:nth-child(7) .product-item{
+  background: #e5bc80 url("../img/product-item-7-main.jpg") no-repeat;
+}
+
+li:nth-child(8) .product-item{
+  background: #e5bc80 url("../img/product-item-8-main.jpg") no-repeat;
+}
+
+li:nth-child(9) .product-item{
+  background: #e5bc80 url("../img/product-item-9-main.jpg") no-repeat;
+}
+
+li:nth-child(10) .product-item{
+  background: #e5bc80 url("../img/product-item-10-main.jpg") no-repeat;
+}
+
+li:nth-child(11) .product-item{
+  background: #e5bc80 url("../img/product-item-11-main.jpg") no-repeat;
+}
+
+li:nth-child(12) .product-item{
+  background: #e5bc80 url("../img/product-item-12-main.jpg") no-repeat;
+}
+
+.delete .button {
+  background-color: transparent;
+}
+
+.about-us, .news, .email, .contacts-block {
+  font-family: "Roboto:400", serif;
+  color: #323232;
+  text-decoration: none;
+}
+
+.dropdown-menu, .dropdown-menu a {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.filters fieldset {
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-footer {
+  font-family: "Roboto:400", serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+.contacts-block p:nth-of-type(2) a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.news a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contacts-block {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+address {
+  font-style: normal;
+}
+
+.about-us {
+  background: #ede2c8 url("../img/wafer-background.jpg") repeat;
+}
+
+.news {
+  background: #ffffff url("../img/strawberry-background-main.jpg") no-repeat;
+}
+
+.email {
+  background-color: #f8f7f4;
+  border-image-source: url("../img/bg-post.svg");
+  border-style: solid;
+  border-image-slice: 10;
+  border-image-repeat: repeat;
+  border-image-width: 5px;
+}
+
+.contacts-block {
+  background: #f7f1d9 url("../img/map-pin-main.jpg") no-repeat;
+}
+
+.price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.icon-hit {
+  background: url("../img/hit.png") no-repeat;
+}
+
 h1 {
   font-size: 60px;
   line-height: 61px;
@@ -30,6 +234,31 @@ h1 {
 .main-block .button {
   font-size: 32px;
   line-height: 44px;
+}
+
+.footer-social li {
+  width: 38px;
+  height: 38px;
+}
+
+.footer-social li:first-child {
+  background: #e6ebe9 url("../img/twitter.svg") no-repeat;
+}
+
+.footer-social li:nth-child(2) {
+  background: #e6ebe9 url("../img/instagram.svg") no-repeat;
+}
+
+.footer-social li:nth-child(3) {
+  background: #e6ebe9 url("../img/fb.svg") no-repeat;
+}
+
+.footer-social li:last-child {
+  background: #e6ebe9 url("../img/vk.svg") no-repeat;
+}
+
+.contacts {
+  background: #ffffff;
 }
 
 h2 {
@@ -42,7 +271,8 @@ h2 {
   line-height: 22px;
 }
 
-.stock a {
+.stock a, .contacts-block a, .contacts-block address {
+  font-family: "Roboto:700", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
