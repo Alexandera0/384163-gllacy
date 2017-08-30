@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto:700", sans-serif;
+  font-family: "Roboto:700", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -86,63 +86,13 @@ nav b {
   background: #3b231c url("../img/chocolate-background-main.jpg") no-repeat;
 }
 
-.product-item {
+.product-item img{
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
 }
 
 .product-item a, .advantage-icon, .news p, .email p {
   line-height: 22px;
-  font-family: "Roboto:400", sans-serif;
-}
-
-li:first-child .product-item {
-  background: #fdac35 url("../img/product-item-1-main.jpg") no-repeat;
-}
-
-li:nth-child(2) .product-item{
-  background: #8b3918 url("../img/product-item-2-main.jpg") no-repeat;
-}
-
-li:nth-child(3) .product-item{
-  background: #ee7699 url("../img/product-item-3-main.jpg") no-repeat;
-}
-
-li:nth-child(4) .product-item{
-  background: #e5bc80 url("../img/product-item-4-main.jpg") no-repeat;
-}
-
-li:nth-child(5) .product-item{
-  background: #e5bc80 url("../img/product-item-5-main.jpg") no-repeat;
-}
-
-li:nth-child(6) .product-item{
-  background: #e5bc80 url("../img/product-item-6-main.jpg") no-repeat;
-}
-
-li:nth-child(7) .product-item{
-  background: #e5bc80 url("../img/product-item-7-main.jpg") no-repeat;
-}
-
-li:nth-child(8) .product-item{
-  background: #e5bc80 url("../img/product-item-8-main.jpg") no-repeat;
-}
-
-li:nth-child(9) .product-item{
-  background: #e5bc80 url("../img/product-item-9-main.jpg") no-repeat;
-}
-
-li:nth-child(10) .product-item{
-  background: #e5bc80 url("../img/product-item-10-main.jpg") no-repeat;
-}
-
-li:nth-child(11) .product-item{
-  background: #e5bc80 url("../img/product-item-11-main.jpg") no-repeat;
-}
-
-li:nth-child(12) .product-item{
-  background: #e5bc80 url("../img/product-item-12-main.jpg") no-repeat;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .delete .button {
@@ -150,7 +100,7 @@ li:nth-child(12) .product-item{
 }
 
 .about-us, .news, .email, .contacts-block {
-  font-family: "Roboto:400", serif;
+  font-family: "Roboto", Arial, serif;
   color: #323232;
   text-decoration: none;
 }
@@ -167,7 +117,7 @@ li:nth-child(12) .product-item{
 }
 
 .main-footer {
-  font-family: "Roboto:400", serif;
+  font-family: "Roboto", Arial, serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -213,10 +163,6 @@ address {
   border-image-width: 5px;
 }
 
-.contacts-block {
-  background: #f7f1d9 url("../img/map-pin-main.jpg") no-repeat;
-}
-
 .price {
   font-size: 45px;
   line-height: 45px;
@@ -241,19 +187,19 @@ h1 {
   height: 38px;
 }
 
-.footer-social li:first-child {
+.social-button-tw {
   background: #e6ebe9 url("../img/twitter.svg") no-repeat;
 }
 
-.footer-social li:nth-child(2) {
+.social-button-insta {
   background: #e6ebe9 url("../img/instagram.svg") no-repeat;
 }
 
-.footer-social li:nth-child(3) {
+.social-button-fb {
   background: #e6ebe9 url("../img/fb.svg") no-repeat;
 }
 
-.footer-social li:last-child {
+.social-button-vk {
   background: #e6ebe9 url("../img/vk.svg") no-repeat;
 }
 
@@ -272,7 +218,7 @@ h2 {
 }
 
 .stock a, .contacts-block a, .contacts-block address {
-  font-family: "Roboto:700", sans-serif;
+  font-family: "Roboto:700", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
