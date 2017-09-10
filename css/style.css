@@ -7,9 +7,9 @@ body {
   background: #849d8f no-repeat;
 }
 
-.index-page {
-  background-image:  url("../img/background-main.jpg");
-}
+/*.index-page {*/
+  /*background-image:  url("../img/background-main.jpg");*/
+/*}*/
 
 a {
   text-decoration: underline;
@@ -64,18 +64,14 @@ button:active, button:focus, .button:active, .button:focus {
   font-weight: normal;
 }
 
-nav p {
+.main-navigation p {
   font-size: 14px;
   line-height: 16px;
 }
 
-nav b {
+.main-navigation b {
   font-size: 22px;
   line-height: 24px;
-}
-
-.main-block {
-  text-align: center;
 }
 
 .stock:first-child {
@@ -90,7 +86,7 @@ nav b {
   border-radius: 50%;
 }
 
-.product-item a, .advantage-icon, .news p, .email p {
+.products a, .advantage-icon, .news p, .email p {
   line-height: 22px;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -112,8 +108,63 @@ nav b {
 
 .filters fieldset {
   border: none;
-  font-size: 16px;
-  line-height: 18px;
+  font-family: "Roboto", Arial, serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters legend {
+  margin-bottom: 7px;
+  margin-left: 15px;
+}
+
+.filters form {
+  margin-bottom: 4px;
+}
+
+.filters ul, .filters select, .sort-price div, .filters input[type="button"] {
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 20px;
+}
+
+.filters input[type="button"] {
+  margin-top: 20px;
+  padding: 8px 27px 7px 29px;
+  border: 2px solid white;
+}
+
+.filters ul {
+  margin: 0;
+}
+
+select {
+  width: 193px;
+}
+
+.sort-fat ul, .sort-fill ul {
+  display: flex;
+  padding: 7px 15px;
+  height: 21px;
+
+  /* Временно для сетки */
+  outline: 2px solid #FF0000;
+}
+
+.filters form fieldset {
+  margin-right: 14px;
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+.sort-price div {
+  width: 218px;
+}
+
+
+.sort-fat li, .sort-fill li {
+  margin-right: 18px;
 }
 
 .main-footer {
@@ -177,7 +228,7 @@ h1 {
   line-height: 61px;
 }
 
-.main-block .button {
+.slider button {
   font-size: 32px;
   line-height: 44px;
 }
@@ -245,6 +296,15 @@ h3 {
   overflow: hidden;
 }
 
+.slider button {
+  font-size: 0;
+  max-width: 4px;
+  max-height: 4px;
+  border: 1px solid white;
+  padding: 0;
+  margin: 0 5px 0 0;
+}
+
 /* ----- Сеточные стили ----- */
 html,
 body {
@@ -268,8 +328,7 @@ body {
 }
 
 .main-header {
-  max-height: 120px;
-  margin-bottom: 270px;
+  margin-bottom: -35px;
   padding: 0;
 
   /* Временно для сетки */
@@ -332,13 +391,20 @@ body {
 
 .header-contacts {
   margin-top: 0;
+  width: 165px;
 
   /* Временно для сетки */
   outline: 2px solid #0000FF;
 }
 
-.main-block {
+.header-contacts a {
+  text-decoration: none;
+}
+
+.slider {
+  text-align: center;
   height: 240px;
+  margin-top: 305px;
   margin-bottom: 17px;
 
   /* Временно для сетки */
@@ -346,14 +412,21 @@ body {
 
 }
 
-.main-block .button {
+.slide img {
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left: 200px;
+}
+
+.slider button {
   width: 280px;
   padding: 14px 38px;
   /* Временно для сетки */
   outline: 2px solid #00FFFF;
 }
 
-.text {
+.slides {
   width: 710px;
   padding: 0;
   margin: 0 auto 0 auto;
@@ -362,7 +435,7 @@ body {
   outline: 2px solid #FFFF00;
 }
 
-.sliders {
+.slider-nav {
   position: absolute;
   top: 563px;
   left: 147px;
@@ -462,15 +535,50 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1140px;
-  margin: 0 auto 40px 105px;
+  flex-wrap: wrap;
+  margin: 0 auto 18px 105px;
 }
 
 p.product-item {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .price {
   position: absolute;
+  top: 212px;
+  left: 0;
+}
+
+.category {
+  margin-left: 145px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.goods-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 105px;
+  margin-bottom: 5px;
+}
+
+.goods-navigation li {
+  margin-right: 22px;
+}
+
+.catalog-page main form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 865px;
+  margin-left: 145px;
+  padding: 0;
+
+  /* Временно для сетки */
+  outline: 2px solid #FFFF00;
 }
 
 /*.icon-hit {*/
@@ -507,6 +615,38 @@ p.product-item {
 .products li {
   text-align: center;
   width: 260px;
+  margin-bottom: 22px;
+}
+
+.pages-container {
+  width: 1146px;
+  height: 97px;
+  padding: 0;
+  margin: 0 auto;
+  outline: 1px dashed lightblue;
+}
+
+.pages-nav {
+  width: 200px;
+  height: 97px;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  outline: 1px dashed lightblue;
+}
+
+.page {
+  margin-right: 22px;
+}
+
+.page a{
+  text-decoration: none;
+}
+
+.page:last-child {
+  margin-right: 0;
 }
 
 .icon-ice-cream {
@@ -531,10 +671,11 @@ p.product-item {
 
 .contacts-block {
   background: #000000 url("../img/map-pin-main.jpg") no-repeat;
-  width: 1146px;
-  margin: 0 auto 0 auto;
+  width: 100%;
+  background-size: cover;
+  /*margin: 0 auto 0 auto;*/
   height: 310px;
-  padding: 60px 27px;
+  padding: 60px 0;
 }
 
 .contacts-container {

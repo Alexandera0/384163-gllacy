@@ -9,7 +9,7 @@
 </head>
 <body class="index-page">
 <header class="main-header">
-  <nav class="main-navigation container">
+  <section class="main-navigation container">
     <a class="main-header-logo"><img src="img/logo.svg" alt="Логотип магазина мороженого" width="155" height="63"></a>
     <ul class="site-navigation">
       <li><a href="#">Каталог</a>
@@ -23,8 +23,8 @@
           </ul>
         </div>
       </li>
-      <li><a href="payment.html">Доставка и оплата</a></li>
-      <li><a href="about_company.html">О компании</a></li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">О компании</a></li>
     </ul>
     <ul class="user-navigation">
       <li><a href="#" class="button-search">Поиск</a>
@@ -53,24 +53,29 @@
     </ul>
 
     <p class="header-contacts">
-      с 10 до 20, ежедневно<br>
-      <b>8 812 450-25-25</b>
+      с 10 до 20, ежедневно
+      <b><a href="tel:8 812 450-25-25">8 812 450-25-25</a></b>
     </p>
-  </nav>
+  </section>
 </header>
 
 <main>
-  <section class="main-block">
-    <div class="text">
-    <h1 class="main-text">Крем-брюле и пломбир c малиновым джемом</h1>
-    <a class="button" href="give_both.html">Давайте оба!</a>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="img/ice-creams.png" alt="Мороженки">
+        <h1 class="main-text">Крем-брюле и пломб ир c малиновым джемом</h1>
+        <a class="button" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide"></div>
+      <div class="slide"></div>
     </div>
-    <div class="sliders">
-      <label class="slider current-slider">1</label>
-      <label class="slider">2</label>
-      <label class="slider">3</label>
+    <div class="slider-nav">
+      <button type="button" class="current-slide">Перейти к слайду №1</button>
+      <button type="button">Перейти к слайду №2</button>
+      <button type="button">Перейти к слайду №3</button>
     </div>
-  </section>
+  </div>
 
   <section class="share">
     <h2 class="visually-hidden">Акции</h2>
@@ -78,13 +83,13 @@
       <li class="stock">
         <h2>Малинка даром</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <div class="want-button"><a class="button" href="want_jam.html">Хочу варенье!</a></div>
+        <div class="want-button"><a class="button" href="#">Хочу варенье!</a></div>
       </li>
       <li class="stock">
         <h2>Шоколадки даром</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковкувкуснейшей шоколадной присыпки совершенно
           бесплатно.</p>
-        <div class="want-button"><a class="button" href="want_choco.html">Хочу шоколадки!</a></div>
+        <div class="want-button"><a class="button" href="#">Хочу шоколадки!</a></div>
       </li>
     </ul>
   </section>

@@ -9,13 +9,12 @@
 </head>
 <body class="catalog-page">
 <header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html"> <img src="img/logo.svg" width="160" height="65"
-                                                        alt=" Логотип магазина мороженого"></a>
+  <section class="main-navigation container">
+    <a class="main-header-logo" href="index.html"> <img src="img/logo.svg" width="155" height="63" alt=" Логотип магазина мороженого"></a>
     <ul class="site-navigation">
       <li><a href="catalog-creamy.html" class="checked">Каталог</a>
-        <div>
-          <ul class="dropdown-menu">
+        <div class="dropdown-menu">
+          <ul>
             <li><a href="#">Новинки</a></li>
             <li class="checked-group"><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -25,11 +24,11 @@
         </div>
       </li>
       <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="about_company.html">О компании</a></li>
+      <li><a href="#">О компании</a></li>
     </ul>
     <ul class="user-navigation">
       <li><a href="#" class="button-search">Поиск</a>
-        <div class=" dropdown-menu">
+        <div class="dropdown-menu">
           <label for="search-id" class="visually-hidden">Что ищем?</label>
           <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
         </div>
@@ -84,10 +83,10 @@
     </ul>
 
     <p class="header-contacts">
-      с 10 до 20, ежедневно<br>
-      <b>8 812 450-25-25</b>
+      с 10 до 20, ежедневно
+      <b><a href="tel:8 812 450-25-25">8 812 450-25-25</a></b>
     </p>
-  </nav>
+  </section>
 </header>
 
 <main>
@@ -96,7 +95,9 @@
     <li><a href="catalog.html">Каталог</a></li>
     <li><a class="current-breadcrumbs">Сливочное</a></li>
   </ul>
-  <h2>Сливочное мороженое</h2>
+
+  <h2 class="category">Сливочное мороженое</h2>
+
   <section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
     <form action="https://echo.htmlacademy.ru" method="get">
@@ -109,12 +110,12 @@
         </select>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="sort-price">
         <legend><label for="price-id">Цена:100руб.-500руб.</label></legend>
-        <input id="price-id" type="range" min="100" max="500">
+        <div><input id="price-id" type="range" min="100" max="500"></div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="sort-fat">
         <legend>Жирность:</legend>
         <ul>
           <li><input id="radio-fat-0-id" type="radio" value="0" name="0"><label for="radio-fat-0-id">0%</label></li>
@@ -127,7 +128,7 @@
         </ul>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="sort-fill">
         <legend>Наполнители:</legend>
         <ul>
           <li><input id="checkbox-fill-1-id" type="checkbox" name="chocolate" checked>
@@ -240,8 +241,8 @@
         <a href="item.html">Сливочное с мятным сиропом</a>
       </li>
     </ul>
-
-    <ul>
+    <div class="pages-container">
+    <ul class="pages-nav">
       <li class="page current_page"><a href="#"> 1 </a></li>
       <li class="page"><a> 2 </a></li>
       <li class="page"><a href="#"> 3 </a></li>
@@ -249,6 +250,7 @@
       <li class="page"><a href="#"> 5 </a></li>
       <li class="page"><a href="#"> > </a></li>
     </ul>
+    </div>
   </section>
 </main>
 
@@ -261,18 +263,18 @@
       <li><a class="social-button-vk" href="#">Вконтакте</a></li>
     </ul>
   </div>
-  <div>
+  <div class="footer-menu">
     <ul>
-      <li class="selected"><a href="provider">Для поставщиков</a></li>
-      <li><a href="about_production">О производстве</a></li>
-      <li><a href="documents">Наши документы</a></li>
-      <li><a href="ecology">Экологические стандарты</a></li>
+      <li class="selected"><a href="provider.html">Для поставщиков</a></li>
+      <li><a href="about_production.html">О производстве</a></li>
+      <li><a href="documents.html">Наши документы</a></li>
+      <li><a href="ecology.html">Экологические стандарты</a></li>
     </ul>
   </div>
   <p class="footer-copyright">
-    <a class="html-logo" href="https://htmlacademy.ru"> <img src="img/logo-htmlacademy-small.svg" width="120" height="50"
-                                                             alt="Логотип HTML Academy"></a>
-    Сделано в <a href="https://htmlacademy.ru">HTML ACADEMY</a> © 2016
+    <a class="html-logo" href="https://htmlacademy.ru"> <img src="img/logo-htmlacademy-small.svg" width="120" height="37"
+                                                             alt="Логотип HTML Academy"></a><br>
+    Сделано в <a href="https://htmlacademy.ru">HTML ACADEMY</a> © 2017
   </p>
 </footer>
 
