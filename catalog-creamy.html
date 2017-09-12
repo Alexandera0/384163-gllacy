@@ -33,7 +33,7 @@
           <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
         </div>
       </li>
-      <li><a href="#" class="button-login"><img src="img/login.svg" height="19" width="21" alt="Вход">Вход</a>
+      <li><a href="#" class="button-login">Вход</a>
         <div class=" dropdown-menu">
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="email-id" class="visually-hidden">Электронная почта</label>
@@ -48,7 +48,7 @@
           </form>
         </div>
       </li>
-      <li><a href="#" class="button-basket"><img src="img/basket-red.svg" width="30" height="30" alt=" Корзина">2 товара</a>
+      <li><a href="#" class="button-red-basket">2 товара</a>
         <div class="dropdown-menu">
           <form action="https://echo.htmlacademy.ru" method="post">
             <table>
@@ -83,7 +83,7 @@
     </ul>
 
     <p class="header-contacts">
-      с 10 до 20, ежедневно
+      C 10 до 20, ежедневно
       <b><a href="tel:8 812 450-25-25">8 812 450-25-25</a></b>
     </p>
   </section>
@@ -101,7 +101,7 @@
   <section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
     <form action="https://echo.htmlacademy.ru" method="get">
-      <fieldset>
+      <fieldset class="sort">
         <legend>Сортировка:</legend>
         <select name="sort">
           <option value="popular">по популярности</option>
@@ -110,20 +110,29 @@
         </select>
       </fieldset>
 
-      <fieldset class="sort-price">
-        <legend><label for="price-id">Цена:100руб.-500руб.</label></legend>
-        <div><input id="price-id" type="range" min="100" max="500"></div>
+      <fieldset class="filter-range">
+        <div class="price-controls">
+          <label class="min-price">Ценa: <input type="text" name="min-price" value="100"> руб.</label>
+          <label class="max-price"> &ndash; <input type="text" name="max-price" value="500">руб.</label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
       </fieldset>
 
       <fieldset class="sort-fat">
         <legend>Жирность:</legend>
         <ul>
-          <li><input id="radio-fat-0-id" type="radio" value="0" name="0"><label for="radio-fat-0-id">0%</label></li>
-          <li><input id="radio-fat-10-id" type="radio" value="10" name="10" checked><label for="radio-fat-10-id">до
+          <li><input id="radio-fat-0-id" type="radio" value="0" name="0" class="visually-hidden"><label for="radio-fat-0-id">0%</label></li>
+          <li><input id="radio-fat-10-id" type="radio" value="10" name="10" class="visually-hidden" checked><label for="radio-fat-10-id">до
             10%</label></li>
-          <li><input id="radio-fat-30-id" type="radio" value="<30" name="<30"><label for="radio-fat-30-id">до
+          <li><input id="radio-fat-30-id" type="radio" value="<30" name="<30" class="visually-hidden"><label for="radio-fat-30-id">до
             30%</label></li>
-          <li><input id="radio-fat-more-30-id" type="radio" value=">30" name=">30"><label for="radio-fat-more-30-id">выше
+          <li><input id="radio-fat-more-30-id" type="radio" value=">30" name=">30" class="visually-hidden"><label for="radio-fat-more-30-id">выше
             30%</label></li>
         </ul>
       </fieldset>
@@ -131,19 +140,19 @@
       <fieldset class="sort-fill">
         <legend>Наполнители:</legend>
         <ul>
-          <li><input id="checkbox-fill-1-id" type="checkbox" name="chocolate" checked>
+          <li><input id="checkbox-fill-1-id" type="checkbox" name="chocolate" class="visually-hidden" checked>
             <label for="checkbox-fill-1-id">шоколадные</label>
           </li>
-          <li><input id="checkbox-fill-2-id" type="checkbox" name="sugar" checked>
+          <li><input id="checkbox-fill-2-id" type="checkbox" name="sugar" class="visually-hidden" checked>
             <label for="checkbox-fill-2-id">сахарные присыпки</label>
           </li>
-          <li><input id="checkbox-fill-3-id" type="checkbox" name="fruits">
+          <li><input id="checkbox-fill-3-id" type="checkbox" name="fruits" class="visually-hidden">
             <label for="checkbox-fill-3-id">фрукты</label>
           </li>
-          <li><input id="checkbox-fill-4-id" type="checkbox" name="sirup">
+          <li><input id="checkbox-fill-4-id" type="checkbox" name="sirup" class="visually-hidden">
             <label for="checkbox-fill-4-id">сиропы</label>
           </li>
-          <li><input id="checkbox-fill-5-id" type="checkbox" name="jam">
+          <li><input id="checkbox-fill-5-id" type="checkbox" name="jam" class="visually-hidden">
             <label for="checkbox-fill-5-id">джемы</label>
           </li>
         </ul>
@@ -257,10 +266,10 @@
 <footer class="main-footer">
   <div class="footer-social">
     <ul>
-      <li><a class="social-button-tw" href="#">Твиттер</a></li>
-      <li><a class="social-button-insta" href="#">Инстаграм</a></li>
-      <li><a class="social-button-fb" href="#">Фэйсбук</a></li>
-      <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+      <li><a href="#" class="social-button-tw">Твиттер</a></li>
+      <li class="social-button-insta"><a href="#">Инстаграм</a></li>
+      <li class="social-button-fb"><a href="#">Фэйсбук</a></li>
+      <li class="social-button-vk"><a href="#">Вконтакте</a></li>
     </ul>
   </div>
   <div class="footer-menu">
