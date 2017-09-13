@@ -12,10 +12,10 @@
   <section class="main-navigation container">
     <a class="main-header-logo"><img src="img/logo.svg" alt="Логотип магазина мороженого" width="155" height="63"></a>
     <ul class="site-navigation">
-      <li><a href="#">Каталог</a>
+      <li class="menu-list-1"><a href="#">Каталог</a>
         <div class="dropdown-menu">
           <ul>
-            <li><a href="#">Новинки</a></li>
+            <li class="dropdown-menu-list"><a href="#">Новинки</a></li>
             <li><a href="catalog-creamy.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
@@ -23,28 +23,32 @@
           </ul>
         </div>
       </li>
-      <li><a href="#">Доставка и оплата</a></li>
+      <li class="menu-list-2"><a href="#">Доставка и оплата</a></li>
       <li><a href="#">О компании</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a href="#" class="button-search">Поиск</a>
+      <li class="search"><a href="#" class="button-search">Поиск</a>
         <div class="dropdown-menu">
           <label for="search-id" class="visually-hidden">Что ищем?</label>
           <input id="search-id" class="login-icon-search" type="text" name="search" placeholder="Что ищем?">
         </div>
       </li>
-      <li><a href="#" class="button-login">Вход</a>
-        <div class=" dropdown-menu">
+      <li class="login"><a href="#" class="button-login">Вход</a>
+        <div class="dropdown-menu visually-hidden">
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="email-id" class="visually-hidden">Электронная почта</label>
             <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
             <label for="password-id" class="visually-hidden">Пароль</label>
             <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
-            <button class="button" type="submit">Войти</button>
-            <p class="login-password-info">
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="registration" href="#">Новая регистрация</a>
-            </p>
+            <div class="help">
+              <button class="button" type="submit">Войти</button>
+              <p class="login-password-info">
+                <!--<ul class="help-login">-->
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="registration" href="#">Новая регистрация</a>
+                <!--</ul>-->
+              </p>
+            </div>
           </form>
         </div>
       </li>
@@ -62,14 +66,14 @@
 <main>
   <div class="slider">
     <div class="slides">
-      <div class="slide" style="display: none;">
+      <div class="slide">
         <img src="img/background-main.png" alt="Мороженки" height="881" width="1045">
         <div class="slide-content">
         <h1 class="main-text">Крем-брюле и пломбир c малиновым джемом</h1>
         <a class="button" href="#">Давайте оба!</a>
         </div>
       </div>
-      <div class="slide" >
+      <div class="slide" style="display: none;">
         <img src="img/background-main-2.png" alt="Мороженки" height="859" width="1065">
         <div class="slide-content">
         <h1 class="main-text">Шоколадный пломбир и лимонный сорбет</h1>
@@ -118,28 +122,28 @@
           <b class="price">310₽/кг</b>
           <img src="img/product-item-1-main.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         </p>
-        <a href="item.htmml">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </li>
       <li>
         <p class="product-item">
           <b class="price">380₽/кг</b>
           <img src="img/product-item-2-main.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
         </p>
-        <a href="item.htmml">Сливочно-кофейное с кусочками шоколада</a>
+        <a href="#">Сливочно-кофейное с кусочками шоколада</a>
       </li>
       <li>
         <p class="product-item">
           <b class="price">355₽/кг</b>
           <img src="img/product-item-3-main.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
         </p>
-        <a href="item.htmml">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </li>
       <li>
         <p class="product-item">
           <b class="price">415₽/кг</b>
           <img src="img/product-item-4-main.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
         </p>
-        <a href="item.htmml">Сливочное крем-брюле с карамельной подливкой</a>
+        <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
       </li>
     </ul>
   </section>
@@ -170,7 +174,7 @@
   <article class="news">
     <h2 class="visually-hidden">Новости</h2>
     <p>Новое в нашем блоге</p>
-    <a href="news.html">10 способов сервировки фруктовых щербетов к столу</a>
+    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
   </article>
 
   <section class="email">
@@ -196,7 +200,7 @@
       <a href="#">8 812 450-25-25</a><br>
       (с 10 до 20 ежедневно)
     </p>
-    <a class="button" href="forma.html">Форма обратной связи</a>
+    <a class="button" href="#">Форма обратной связи</a>
     </div>
     </div>
   </section>
@@ -213,10 +217,10 @@
   </div>
   <div class="footer-menu">
     <ul>
-      <li class="selected"><a href="provider.html">Для поставщиков</a></li>
-      <li><a href="about_production.html">О производстве</a></li>
-      <li><a href="documents.html">Наши документы</a></li>
-      <li><a href="ecology.html">Экологические стандарты</a></li>
+      <li class="selected"><a href="#">Для поставщиков</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
     </ul>
   </div>
   <p class="footer-copyright">
