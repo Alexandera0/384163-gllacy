@@ -372,25 +372,6 @@ select::-ms-expand {
   top: 0;
 }
 
-.slider-nav input[type=radio]:first-child:checked ~ .slide:first-child {
-  background-color: #849d8f;
-  display: block;
-}
-
-.slider-nav input[type=radio]:nth-child(2):checked ~ .slider:nth-child(2) {
-  background-color: #8996a6;
-  display: block;
-}
-
-.slider-nav input[type=radio]:nth-child(3):checked ~ .slider:nth-child(3) {
-  background-color: #9d8b84;
-  display: block;
-}
-
-.slide:not(:first-child) {
-  display: none;
-}
-
 input[type=checkbox]:checked + label:before {
   background: url("../img/checkbox-on.svg") no-repeat;
   background-size: 24px 24px;
@@ -402,26 +383,62 @@ input[type=checkbox]:checked + label:before {
   background-size: 22px 22px;
 }
 
-.slider-nav label::before {
-  content:" ";
-  display: block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
+
+.slider-nav .is-active {
+  background-color: #ffffff;
+}
+
+.slider-dot:hover, .slider-dot:active, .slider-dot:focus {
+  background: none;
+}
+
+.is-active:hover, .is-active:active, .is-active:focus {
+  background: #ffffff;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  width: 700px;
+  margin-bottom: 35px;
+}
+
+.slider-dot {
+  display: inline-block;
+  font-size: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   background: none;
   border: 2px solid #ffffff;
-  border-radius: 50%;
   cursor: pointer;
-}
-
-.slider-nav ul {
-  display: flex;
   padding: 0;
-  margin: 0;
 }
 
-.slider-nav input[type=radio]:checked + label:before {
-  background-color: #ffffff;
+.slide {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  height: 545px;
+  outline: 1px dotted red;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  /*max-width: 100%;*/
+  /*max-height: 100%;*/
+}
+
+.slider-dot + .slider-dot {
+  margin-left: 5px;
 }
 
 /*чекбоксы 2*/
@@ -648,31 +665,29 @@ body {
 
 .slider {
   text-align: center;
-  height: 240px;
-  margin-top: 305px;
   margin-bottom: 17px;
-
+  position: relative;
 }
 
 .slide img {
   position: absolute;
   z-index: -1;
-  top:0;
+  /*top:0;*/
   left: 200px;
+  bottom: -170px;
 }
 
 .slides {
-  width: 710px;
+  /*width: 710px;*/
   padding: 0;
   margin: 0 auto 0 auto;
 }
 
 .slider-nav {
   position: absolute;
-  top: 563px;
   left: 147px;
-  width: 82px;
-  height: 20px;
+  bottom: 47px;
+  padding:0;
 }
 
 .stocks, .news-email-block {
@@ -851,6 +866,7 @@ p.product-item {
   height: 97px;
   padding: 0;
   margin: 0 auto;
+  border-bottom: 1px solid #ffffff;
 }
 
 .pages-nav {
@@ -933,7 +949,7 @@ button.current-slide {
   background: #000000 url("../img/map-pin-main.jpg") no-repeat;
   width: 100%;
   background-size: cover;
-  /*margin: 0 auto 0 auto;*/
+  /*margin: 0 auto;*/
   height: 310px;
   padding: 60px 0;
 }
@@ -991,7 +1007,7 @@ button.current-slide {
 
 .footer-social, .footer-menu
 {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .footer-copyright {

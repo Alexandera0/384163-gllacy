@@ -61,31 +61,34 @@
 
 <main>
   <div class="slider">
-
-    <div class="slider-nav">
-      <ul>
-        <li><input type="radio" id="btn-1" name="toggle" value="1" class="visually-hidden" checked><label for="btn-1"></label></li>
-        <li><input type="radio" id="btn-2" name="toggle" value="2" class="visually-hidden"><label for="btn-2"></label></li>
-        <li><input type="radio" id="btn-3" name="toggle" value="3" class="visually-hidden"><label for="btn-3"></label></li>
-      </ul>
-    </div>
-
     <div class="slides">
-      <div class="slide">
-        <img src="img/background-main.png" alt="Мороженки">
+      <div class="slide" style="display: none;">
+        <img src="img/background-main.png" alt="Мороженки" height="881" width="1045">
+        <div class="slide-content">
         <h1 class="main-text">Крем-брюле и пломбир c малиновым джемом</h1>
         <a class="button" href="#">Давайте оба!</a>
+        </div>
       </div>
-      <div class="slide">
-        <img src="img/background-main-2.png" alt="Мороженки">
+      <div class="slide" >
+        <img src="img/background-main-2.png" alt="Мороженки" height="859" width="1065">
+        <div class="slide-content">
         <h1 class="main-text">Шоколадный пломбир и лимонный сорбет</h1>
         <a class="button" href="#">Давайте оба!</a>
+        </div>
       </div>
-      <div class="slide">
-        <img src="img/background-main-3.png" alt="Мороженки">
+      <div class="slide" style="display: none;">
+        <img src="img/background-main-3.png" alt="Мороженки" height="854" width="1079">
+        <div class="slide-content">
         <h1 class="main-text">Пломбир с помадкой и клубничный щербет</h1>
         <a class="button" href="#">Давайте оба!</a>
+        </div>
       </div>
+    </div>
+
+    <div class="slider-nav">
+        <button type="button" class="slider-dot is-active">Слайд 1</button>
+        <button type="button" class="slider-dot">Слайд 2</button>
+        <button type="button" class="slider-dot">Слайд 3</button>
     </div>
 
   </div>
@@ -112,7 +115,6 @@
     <ul class="products">
       <li>
         <p class="product-item">
-          <!--<span class="icon-hit">ХИТ</span>-->
           <b class="price">310₽/кг</b>
           <img src="img/product-item-1-main.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         </p>
@@ -120,7 +122,6 @@
       </li>
       <li>
         <p class="product-item">
-          <!--<span class="icon-hit">ХИТ</span>-->
           <b class="price">380₽/кг</b>
           <img src="img/product-item-2-main.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
         </p>
@@ -128,7 +129,6 @@
       </li>
       <li>
         <p class="product-item">
-          <!--<span class="icon-hit">ХИТ</span>-->
           <b class="price">355₽/кг</b>
           <img src="img/product-item-3-main.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
         </p>
@@ -136,7 +136,6 @@
       </li>
       <li>
         <p class="product-item">
-          <!--<span class="icon-hit">ХИТ</span>-->
           <b class="price">415₽/кг</b>
           <img src="img/product-item-4-main.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
         </p>
@@ -149,22 +148,18 @@
     <h3>Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h3>
     <ul class="advantages">
       <li class="advantage-icon icon-ice-cream">
-        <!--<img src="img/icon-ice-cream-main.svg" height="50" width="50" alt="Иконка-1">-->
         Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
         проверенных временем технологий.
       </li>
       <li class="advantage-icon icon-leaf">
-        <!--<img src="img/icon-leaf-main.svg" height="50" width="50" alt="Иконка-2">-->
         Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
         ингредиенты и добавки произведены из натурального, экологически чистого сырья
       </li>
       <li class="advantage-icon icon-cow">
-        <!--<img src="img/icon-cow-main.svg" height="50" width="50" alt="Иконка-3">-->
         Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
         долговременное сотрудничество.
       </li>
       <li class="advantage-icon icon-thermometer">
-        <!--<img src="img/icon-thermometer-main.svg" height="50" width="50" alt="Иконка-4">-->
         Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
         растаять в пути и позволяет сохранить превосходный вкус.
       </li>
