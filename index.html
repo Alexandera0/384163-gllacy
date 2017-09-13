@@ -61,20 +61,33 @@
 
 <main>
   <div class="slider">
+
+    <div class="slider-nav">
+      <ul>
+        <li><input type="radio" id="btn-1" name="toggle" value="1" class="visually-hidden" checked><label for="btn-1"></label></li>
+        <li><input type="radio" id="btn-2" name="toggle" value="2" class="visually-hidden"><label for="btn-2"></label></li>
+        <li><input type="radio" id="btn-3" name="toggle" value="3" class="visually-hidden"><label for="btn-3"></label></li>
+      </ul>
+    </div>
+
     <div class="slides">
       <div class="slide">
-        <img src="img/ice-creams.png" alt="Мороженки">
+        <img src="img/background-main.png" alt="Мороженки">
         <h1 class="main-text">Крем-брюле и пломбир c малиновым джемом</h1>
         <a class="button" href="#">Давайте оба!</a>
       </div>
-      <div class="slide"></div>
-      <div class="slide"></div>
+      <div class="slide">
+        <img src="img/background-main-2.png" alt="Мороженки">
+        <h1 class="main-text">Шоколадный пломбир и лимонный сорбет</h1>
+        <a class="button" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide">
+        <img src="img/background-main-3.png" alt="Мороженки">
+        <h1 class="main-text">Пломбир с помадкой и клубничный щербет</h1>
+        <a class="button" href="#">Давайте оба!</a>
+      </div>
     </div>
-    <div class="slider-nav">
-      <button type="button" class="current-slide">Перейти к слайду №1</button>
-      <button type="button">Перейти к слайду №2</button>
-      <button type="button">Перейти к слайду №3</button>
-    </div>
+
   </div>
 
   <section class="share">

@@ -7,10 +7,6 @@ body {
   background: #849d8f no-repeat;
 }
 
-/*.index-page {*/
-  /*background-image:  url("../img/background-main.jpg");*/
-/*}*/
-
 a {
   text-decoration: underline;
   color: #ffffff;
@@ -353,7 +349,7 @@ select::-ms-expand {
   margin-right: 0;
 }
 
-.sort-fill label:before {
+.sort-fill label::before {
   content:" ";
   width: 24px;
   height: 24px;
@@ -364,7 +360,7 @@ select::-ms-expand {
   left: -30px;
 }
 
-.sort-fat label:before {
+.sort-fat label::before {
   content:" ";
   width: 22px;
   height: 22px;
@@ -376,15 +372,56 @@ select::-ms-expand {
   top: 0;
 }
 
+.slider-nav input[type=radio]:first-child:checked ~ .slide:first-child {
+  background-color: #849d8f;
+  display: block;
+}
+
+.slider-nav input[type=radio]:nth-child(2):checked ~ .slider:nth-child(2) {
+  background-color: #8996a6;
+  display: block;
+}
+
+.slider-nav input[type=radio]:nth-child(3):checked ~ .slider:nth-child(3) {
+  background-color: #9d8b84;
+  display: block;
+}
+
+.slide:not(:first-child) {
+  display: none;
+}
+
 input[type=checkbox]:checked + label:before {
   background: url("../img/checkbox-on.svg") no-repeat;
   background-size: 24px 24px;
   top: -2px;
 }
 
-input[type=radio]:checked + label:before {
+.sort-fat input[type=radio]:checked + label:before {
   background: url("../img/radio-on.svg") no-repeat;
   background-size: 22px 22px;
+}
+
+.slider-nav label::before {
+  content:" ";
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-nav input[type=radio]:checked + label:before {
+  background-color: #ffffff;
 }
 
 /*чекбоксы 2*/
@@ -423,10 +460,6 @@ address {
   background: #ede2c8 url("../img/wafer-background.jpg") repeat;
 }
 
-.news {
-  background: #ffffff url("../img/strawberry-background-main.jpg") no-repeat;
-}
-
 .email {
   background-color: #f8f7f4;
   border-image-source: url("../img/bg-post.svg");
@@ -448,11 +481,6 @@ address {
 h1 {
   font-size: 60px;
   line-height: 61px;
-}
-
-.slider button {
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .footer-social li {
@@ -533,29 +561,11 @@ h3 {
   overflow: hidden;
 }
 
-.slider button {
-  font-size: 0;
-  max-width: 4px;
-  max-height: 4px;
-  border: 1px solid white;
-  padding: 0;
-  margin: 0 5px 0 0;
-}
-
 /* ----- Сеточные стили ----- */
 html,
 body {
   min-width: 1122px;
   min-height: 1150px;
-}
-
-.index-page {
-  /* Временно для сетки */
-  /*background-image: url("../img/gllacy-index-1200.jpg");*/
-  background-size: 1200px auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-  /*opacity: 0.5;*/
 }
 
 .container {
@@ -567,9 +577,6 @@ body {
 .main-header {
   margin-bottom: -35px;
   padding: 0;
-
-  /* Временно для сетки */
-  outline: 2px solid #ADFF2F;
 }
 
 .main-header-logo {
@@ -577,9 +584,6 @@ body {
   height: 63px;
   padding-top: 10px;
   margin: 0;
-
-  /* Временно для сетки */
-  outline: 2px solid #FF0000;
 }
 
 .main-navigation {
@@ -590,10 +594,6 @@ body {
   width: 1146px;
   max-height:120px;
   padding: 0;
-
-
-  /* Временно для сетки */
-  outline: 2px solid #FFFF00;
 }
 
 .site-navigation {
@@ -603,9 +603,6 @@ body {
   margin: 0 10px 0 21px;
   width: 695px;
   padding-left: 0;
-
-  /* Временно для сетки */
-  outline: 2px solid #00FFFF;
 }
 
 .site-navigation li:first-child {
@@ -622,9 +619,6 @@ body {
   justify-content: flex-end;
   width: 265px;
   padding: 0;
-
-  /* Временно для сетки */
-  outline: 2px solid #FF00FF;
 }
 
 .user-navigation a {
@@ -644,9 +638,6 @@ body {
   margin-top: 0;
   width: 165px;
   text-align: right;
-
-  /* Временно для сетки */
-  outline: 2px solid #0000FF;
 }
 
 .header-contacts a {
@@ -661,9 +652,6 @@ body {
   margin-top: 305px;
   margin-bottom: 17px;
 
-  /* Временно для сетки */
-  outline: 2px solid #FF00FF;
-
 }
 
 .slide img {
@@ -673,31 +661,18 @@ body {
   left: 200px;
 }
 
-.slider button {
-  width: 280px;
-  padding: 14px 38px;
-  /* Временно для сетки */
-  outline: 2px solid #00FFFF;
-}
-
 .slides {
   width: 710px;
   padding: 0;
   margin: 0 auto 0 auto;
-
-  /* Временно для сетки */
-  outline: 2px solid #FFFF00;
 }
 
 .slider-nav {
   position: absolute;
   top: 563px;
   left: 147px;
-  width: 80px;
+  width: 82px;
   height: 20px;
-
-  /* Временно для сетки */
-  outline: 2px solid #FF0000;
 }
 
 .stocks, .news-email-block {
@@ -711,7 +686,7 @@ body {
 }
 
 .news-email-block {
-  margin: 0 auto 40px 146px;
+  margin: 0 auto 40px auto;
 }
 
 .stock {
@@ -733,6 +708,7 @@ body {
 
 .stock .button {
   padding: 12px 18px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .want-button {
@@ -743,14 +719,15 @@ body {
 }
 
 .news {
+  background: #ffffff url("../img/strawberry-background-main.jpg") no-repeat;
   width: 281px;
-  height: 193px;
+  height: 198px;
   border-radius: 15px;
-  padding: 27px 260px 0 20px;
+  padding: 20px 260px 0 20px;
 }
 
 .news-email-block p {
-  margin: 0;
+  margin:0 0 5px 0;
 }
 
 .email {
@@ -761,7 +738,7 @@ body {
 }
 
 .email p {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .email-form {
@@ -781,8 +758,11 @@ body {
 }
 
 .email-form .button {
-  padding: 14px 22px;
+  padding: 13px 21px;
   margin-right: 12px;
+  font-family: "Roboto:700", Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .products {
@@ -831,14 +811,7 @@ p.product-item {
   width: 865px;
   margin-left: 145px;
   padding: 0;
-
-  /* Временно для сетки */
-  outline: 2px solid #FFFF00;
 }
-
-/*.icon-hit {*/
-  /*position: relative;*/
-/*}*/
 
 .about-us {
   width: 1106px;
@@ -878,7 +851,6 @@ p.product-item {
   height: 97px;
   padding: 0;
   margin: 0 auto;
-  outline: 1px dashed lightblue;
 }
 
 .pages-nav {
@@ -890,15 +862,9 @@ p.product-item {
   align-items: center;
   justify-content: flex-end;
   position: relative;
-
-  outline: 1px dashed lightblue;
 }
 
-.current-page {
-  margin-right: 12px;
-}
-
-.page:not(.current_page) {
+.page:not(.current-page) {
   margin-right: 21px;
 }
 
@@ -908,18 +874,31 @@ p.product-item {
   margin-right: 10px;
   color: rgba(255, 255, 255, 0.3);
   left: 10px;
+  bottom: 38px;
 }
 
-.current_page a{
+.current-page a{
   display: block;
-  width: 20px;
-  height: 23px;
+  width: 18px;
+  height: 21px;
   background-color: white;
   background-size: 18px 18px;
   color: black;
   padding-left: 9px;
   padding-top: 6px;
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.slide .button {
+  font-size: 32px;
+  line-height: 44px;
+  padding: 15px 35px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+button.current-slide {
+  background: white;
 }
 
 .page a{
@@ -994,6 +973,7 @@ p.product-item {
 .contacts-block a.button {
   padding: 14px 23px;
   margin-bottom: 30px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .main-footer {
@@ -1007,8 +987,6 @@ p.product-item {
   display: flex;
   padding: 0;
   height: 40px;
-
-  outline: 2px solid #ADFF2F;
 }
 
 .footer-social, .footer-menu
@@ -1027,8 +1005,6 @@ p.product-item {
   flex-wrap: wrap;
   height: 50px;
   padding-left: 0;
-
-  /*outline: 2px solid #ADFF2F;*/
 }
 
 .footer-menu li {
