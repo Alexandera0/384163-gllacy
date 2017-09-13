@@ -944,6 +944,29 @@ p.product-item {
   margin-top: 16px;
 }
 
+.products a:hover {
+  color: #ffffff;
+}
+
+.products li:hover {
+  background: rgba(256, 256, 256, 0.2);
+  border-radius: 5px;
+  position: relative;
+  width: 300px;
+  /*padding: 0 2px0 0 10px;*/
+}
+
+.products li:hover:after {
+  content: "Быстрый просмотр";
+  display:block;
+  padding: 17px 13px;
+  background: #f16542;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 20px;
+  width: 200px;
+  margin: 30px auto 35px auto;
+}
+
 .price {
   position: absolute;
   top: 212px;
