@@ -318,6 +318,10 @@ select::-ms-expand {
   margin-top: 3px;
 }
 
+.filters {
+  margin-bottom: 10px;
+}
+
 /*чекбоксы 1*/
 
 .sort-fill li, .sort-fat li {
@@ -571,7 +575,21 @@ h3 {
   top: 35px;
   z-index: 2;
   box-shadow: 0 10px 30px 2px rgba(0, 0, 0, 0.4);
+}
 
+.dropdown-menu {
+  display: none;
+}
+
+.button-search:hover + .dropdown-menu,
+.button-login:hover + .dropdown-menu,
+.menu-list-1 a:hover + .dropdown-menu,
+.button-red-basket:hover +.dropdown-menu {
+  display: block;
+}
+
+.search .dropdown-menu {
+  left: -312px;
 }
 
 .dropdown-menu a {
@@ -932,45 +950,60 @@ body {
 
 .products {
   display: flex;
-  justify-content: space-between;
-  width: 1140px;
+  /*justify-content: space-between;*/
+  width: 1200px;
   flex-wrap: wrap;
-  margin: 0 auto 18px 105px;
+  margin: 0 auto 18px 90px;
 }
 
 p.product-item {
-  margin-bottom: 11px;
-  position: relative;
-  margin-top: 16px;
+  /*position: relative;*/
+  margin: 16px 0 11px 0;
 }
 
-.products a:hover {
+.products a:hover, .main-header a:hover {
   color: #ffffff;
+}
+
+.main-header .basket a:hover {
+  color: #000000;
+}
+
+.products li {
+  display: flex;
+  flex-direction: column;
 }
 
 .products li:hover {
   background: rgba(256, 256, 256, 0.2);
   border-radius: 5px;
-  position: relative;
-  width: 300px;
-  /*padding: 0 2px0 0 10px;*/
+  z-index: 1;
 }
 
-.products li:hover:after {
-  content: "Быстрый просмотр";
-  display:block;
+.products li:hover .quick-show {
+  visibility: visible;
+  pointer-events: all;
+  z-index: 1;
+}
+
+.quick-show {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 15px auto;
+  bottom: 0;
   padding: 17px 13px;
   background: #f16542;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border-radius: 20px;
-  width: 200px;
-  margin: 30px auto 35px auto;
+  visibility: hidden;
+  pointer-events: none;
+  width: 180px;
 }
 
 .price {
   position: absolute;
-  top: 212px;
-  left: 0;
+  top: 225px;
+  left: 13px;
 }
 
 .category {
@@ -1030,8 +1063,9 @@ p.product-item {
 
 .products li {
   text-align: center;
-  width: 258px;
-  margin-bottom: 22px;
+  width: 295px;
+  margin-bottom: -67px;
+  position: relative;
 }
 
 .pages-container {

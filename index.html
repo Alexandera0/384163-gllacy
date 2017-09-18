@@ -34,7 +34,7 @@
         </div>
       </li>
       <li class="login"><a href="#" class="button-login">Вход</a>
-        <div class="dropdown-menu visually-hidden">
+        <div class="dropdown-menu">
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="email-id" class="visually-hidden">Электронная почта</label>
             <input id="email-id" class="login-icon-user" type="email" name="email" placeholder="Электронная почта">
@@ -43,10 +43,8 @@
             <div class="help">
               <button class="button" type="submit">Войти</button>
               <p class="login-password-info">
-                <!--<ul class="help-login">-->
                 <a class="restore" href="#">Забыли пароль?</a>
                 <a class="registration" href="#">Новая регистрация</a>
-                <!--</ul>-->
               </p>
             </div>
           </form>
@@ -123,6 +121,7 @@
           <img src="img/product-item-1-main.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         </p>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a class="button quick-show">Быстрый просмотр</a>
       </li>
       <li>
         <p class="product-item">
@@ -130,6 +129,7 @@
           <img src="img/product-item-2-main.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
         </p>
         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <a class="button quick-show">Быстрый просмотр</a>
       </li>
       <li>
         <p class="product-item">
@@ -137,6 +137,7 @@
           <img src="img/product-item-3-main.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
         </p>
         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a class="button quick-show">Быстрый просмотр</a>
       </li>
       <li>
         <p class="product-item">
@@ -144,6 +145,7 @@
           <img src="img/product-item-4-main.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
         </p>
         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <a class="button quick-show">Быстрый просмотр</a>
       </li>
     </ul>
   </section>
@@ -229,6 +231,18 @@
     Сделано в <a href="https://htmlacademy.ru">HTML ACADEMY</a> © 2017
   </p>
 </footer>
+
+
+<div class="modal">
+  <p>Мы обязательно вам ответим!</p>
+  <button class="button cross" type="button"><img src="img/cross-big.svg" height="17" width="17"></button>
+  <form>
+    <input type="text" name="name" placeholder="Как вас зовут?">
+    <input type="email" name="email" placeholder="Ваша почта для ответа?">
+    <textarea placeholder="Напишите что-нибудь..."></textarea>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+</div>
 
 </body>
 </html>
