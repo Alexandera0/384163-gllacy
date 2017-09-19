@@ -13,7 +13,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #f07963;
+  color: #ffbc9e;
 }
 
 ul {
@@ -50,6 +50,35 @@ button:active, button:focus, .button:active, .button:focus {
 .button-login {
   background: url("../img/login.svg") no-repeat;
   padding-left: 23px;
+}
+
+.user-navigation .full-basket {
+  background-color: #ffffff;
+}
+
+.user-navigation li:hover a{
+  color: #323232;
+}
+
+.user-navigation li:hover {
+  background: #ffffff;
+}
+
+.user-navigation .empty-basket:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation .empty-basket:hover a.button-basket {
+  color: #ffffff;
+}
+
+.user-navigation li:hover .button-search {
+  background-image: url("../img/loupe-hover.svg");
+}
+
+.user-navigation li:hover .button-login {
+  background-image: url("../img/login-hover.svg");
+  background-size: 18px 16px;
 }
 
 .button-red-basket {
@@ -214,6 +243,17 @@ select::-ms-expand {
 
 .filters input[type="button"] {
   color: white;
+}
+
+.filters input[type="button"]:hover {
+  background: #ffffff;
+  color: #323232;
+}
+
+.filters select:hover {
+  background: #ffffff url("../img/arrow-hover.svg") no-repeat 168px 12px;
+  color: #323232;
+  background-size: 13px 13px;
 }
 
 /*слайдер 1*/
@@ -389,8 +429,12 @@ input[type=checkbox]:checked + label:before {
   background-color: #ffffff;
 }
 
-.slider-dot:hover, .slider-dot:active, .slider-dot:focus {
-  background: none;
+.slider-dot:hover {
+  background: rgba(256, 256, 256, 0.3);
+}
+
+.slider-dot:active, .slider-dot:focus {
+  background: #ffffff;
 }
 
 .is-active:hover, .is-active:active, .is-active:focus {
@@ -786,6 +830,33 @@ body {
   padding-left: 0;
 }
 
+.site-navigation li[class^="menu-list"] a:not(first-child):hover,
+.site-navigation li[class^="menu-list"] .catalog:hover {
+  background: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #323232;
+  padding: 10px 13px;
+  position:relative;
+  top: -10px;
+  left: -15px;
+  margin-right: -26px;
+  display: block;
+}
+
+.catalog-page .site-navigation .menu-list-1 .catalog{
+  background: #d07058;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 13px;
+  position:relative;
+  top: -10px;
+  left: -15px;
+  margin-right: -26px;
+  display: block;
+}
+
 .site-navigation .menu-list-1 {
   margin-right: 27px;
   position: relative;
@@ -963,7 +1034,7 @@ p.product-item {
 }
 
 .main-header .basket a:hover {
-  color: #000000;
+  color: #323232;
 }
 
 .products li {
@@ -1101,12 +1172,23 @@ p.product-item {
   bottom: 38px;
 }
 
-.page a:hover {
+.page:not(.current-page) a:hover {
   color: white;
+  display: block;
+  width: 18px;
+  height: 21px;
+  background-color: rgba(256,256,256,0.3);
+  background-size: 18px 18px;
+  padding-left: 9px;
+  padding-top: 6px;
+  border-radius: 50%;
+  margin-left: -18px;
+  right: -10px;
+  position: relative;
 }
 
 .current-page a:hover {
-  color: black;
+  color: #323232;
 }
 
 .current-page a{
@@ -1115,7 +1197,7 @@ p.product-item {
   height: 21px;
   background-color: white;
   background-size: 18px 18px;
-  color: black;
+  color: #323232;
   padding-left: 9px;
   padding-top: 6px;
   border-radius: 50%;
@@ -1162,7 +1244,7 @@ button.current-slide {
 }
 
 .contacts-block {
-  background: #000000 url("../img/map-pin-main.jpg") no-repeat;
+  background: #323232 url("../img/map-pin-main.jpg") no-repeat;
   width: 100%;
   background-size: cover;
   /*margin: 0 auto;*/
@@ -1270,7 +1352,7 @@ button.current-slide {
   width: 440px;
   min-height: 405px;
   opacity: 1000;
-  color: black;
+  color: #323232;
   background: #f8f7f4;
   border-radius: 10px;
   z-index: 2;
@@ -1298,6 +1380,20 @@ button.current-slide {
   border-radius: 5px;
   border: 1px solid rgba(209, 208, 206, 20);
   margin-bottom:20px;
+  height: 40px;
+}
+
+.modal input:hover {
+  border-color: #c7c6c5;
+  border-width: 2px;
+  width: 250px;
+  height: 38px;
+}
+
+.dropdown-menu input:hover {
+  border-color: #c7c6c5;
+  border-width: 2px;
+  width: 308px;
   height: 40px;
 }
 
