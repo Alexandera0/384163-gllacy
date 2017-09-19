@@ -107,10 +107,6 @@ button:active, button:focus, .button:active, .button:focus {
   font-weight: normal;
 }
 
-input::placeholder {
-  padding-left: 12px;
-}
-
 .main-navigation p {
   font-size: 14px;
   line-height: 16px;
@@ -140,6 +136,7 @@ input::placeholder {
   width: 61px;
   height: 61px;
   position: absolute;
+  left: 13px;
 }
 
 .products a, .advantage-icon, .news p, .email p {
@@ -152,7 +149,7 @@ input::placeholder {
 }
 
 .about-us, .news, .email, .contacts-block {
-  font-family: "Roboto", Arial, serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #323232;
   text-decoration: none;
 }
@@ -164,7 +161,7 @@ input::placeholder {
 
 .filters fieldset {
   border: none;
-  font-family: "Roboto", Arial, serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -436,8 +433,6 @@ input[type=checkbox]:checked + label:before {
   left: 0;
   margin-top: auto;
   margin-bottom: auto;
-  /*max-width: 100%;*/
-  /*max-height: 100%;*/
 }
 
 .slider-dot + .slider-dot {
@@ -447,13 +442,14 @@ input[type=checkbox]:checked + label:before {
 /*чекбоксы 2*/
 
 .main-footer {
-  font-family: "Roboto", Arial, serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 .footer-copyright {
   font-size: 12px;
+  margin-top: 20px;
 }
 
 .contacts-block p:nth-of-type(2) a {
@@ -686,6 +682,7 @@ h3 {
 
 .buy p  {
   margin-left: auto;
+  align-self: flex-start;
 }
 
 .buy button {
@@ -1068,6 +1065,10 @@ p.product-item {
   position: relative;
 }
 
+.products .item-description {
+  padding: 0 19px;
+}
+
 .pages-container {
   width: 1146px;
   height: 97px;
@@ -1098,6 +1099,14 @@ p.product-item {
   color: rgba(255, 255, 255, 0.3);
   left: 10px;
   bottom: 38px;
+}
+
+.page a:hover {
+  color: white;
+}
+
+.current-page a:hover {
+  color: black;
 }
 
 .current-page a{
@@ -1251,3 +1260,87 @@ button.current-slide {
 .footer-menu li:nth-child(3).selected::before, .footer-menu li:nth-child(4).selected::before {
   left: 120px;
 }
+
+
+.modal {
+  position: absolute;
+  left: 500px;
+  top: 340px;
+  right: 0;
+  width: 440px;
+  min-height: 405px;
+  opacity: 1000;
+  color: black;
+  background: #f8f7f4;
+  border-radius: 10px;
+  z-index: 2;
+  padding: 20px 25px 25px 25px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal p {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 25px;
+}
+
+.modal input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal input {
+  width: 252px;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 208, 206, 20);
+  margin-bottom:20px;
+  height: 40px;
+}
+
+.modal textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 208, 206, 20);
+  margin-bottom: 25px;
+  height: 155px;
+}
+
+.modal .sent {
+  padding: 15px 25px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-self: flex-end;
+}
+
+.modal textarea::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+textarea {
+  text-indent: 2%;
+}
+
+.modal .cross {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+input {
+  text-indent: 3%;
+}
+
+input::-webkit-input-placeholder {
+  text-indent: 4%;
+}
+
