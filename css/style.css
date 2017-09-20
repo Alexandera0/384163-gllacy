@@ -67,19 +67,20 @@ button:focus,
   color: #ffffff;
 }
 .user-navigation li:hover .button-search {
-  background-image: url("../img/loupe-hover.svg");
+  background-image: url("../img/loupe-hover.png");
+  /*-webkit-border-image: url("../img/loupe-hover.png");*/
 }
 .user-navigation li:hover .button-login {
-  background-image: url("../img/login-hover.svg");
+  background-image: url("../img/login-hover.png");
   background-size: 18px 16px;
 }
 .user-navigation li:active a.button-login {
-  background-image: url("../img/login-hover.svg");
+  background-image: url("../img/login-hover.png");
   background-size: 18px 16px;
   color: #ffffff;
 }
 .user-navigation li:focus a.button-login {
-  background-image: url("../img/login-hover.svg");
+  background-image: url("../img/login-hover.png");
   background-size: 18px 16px;
   color: #ffffff;
 }
