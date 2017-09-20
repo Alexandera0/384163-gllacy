@@ -81,6 +81,18 @@ button:active, button:focus, .button:active, .button:focus {
   background-size: 18px 16px;
 }
 
+.user-navigation li:active a.button-login {
+  background-image: url("../img/login-hover.svg");
+  background-size: 18px 16px;
+  color: #ffffff;
+}
+
+.user-navigation li:focus a.button-login {
+  background-image: url("../img/login-hover.svg");
+  background-size: 18px 16px;
+  color: #ffffff;
+}
+
 .button-red-basket {
   background: url("../img/basket-red.svg") no-repeat;
   padding-left: 25px;
@@ -831,7 +843,11 @@ body {
 }
 
 .site-navigation li[class^="menu-list"] a:not(first-child):hover,
-.site-navigation li[class^="menu-list"] .catalog:hover {
+.site-navigation li[class^="menu-list"] .catalog:hover,
+.site-navigation li[class^="menu-list"] a:not(first-child):active,
+.site-navigation li[class^="menu-list"] .catalog:active,
+.site-navigation li[class^="menu-list"] a:not(first-child):focus,
+.site-navigation li[class^="menu-list"] .catalog:focus {
   background: #ffffff;
   border-radius: 20px;
   text-decoration: none;
@@ -1072,6 +1088,7 @@ p.product-item {
   position: absolute;
   top: 225px;
   left: 13px;
+  cursor: pointer;
 }
 
 .category {
