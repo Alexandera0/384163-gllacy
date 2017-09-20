@@ -46,6 +46,7 @@ button:focus,
   font-size: 0;
   width: 19px;
   height: 19px;
+  vertical-align: top;
 }
 .button-login {
   background: url("../img/login.svg") no-repeat;
@@ -68,7 +69,6 @@ button:focus,
 }
 .user-navigation li:hover .button-search {
   background-image: url("../img/loupe-hover.png");
-  /*-webkit-border-image: url("../img/loupe-hover.png");*/
 }
 .user-navigation li:hover .button-login {
   background-image: url("../img/login-hover.png");
@@ -220,11 +220,11 @@ button:focus,
 .filters select {
   width: 193px;
   color: white;
-  -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 15px;
   font-size: 16px;
   line-height: 18px;
+  -webkit-appearance: none;
 }
 select::-ms-expand {
   display: none;
@@ -421,6 +421,7 @@ input[type=checkbox]:checked + label:before {
   border: 2px solid #ffffff;
   cursor: pointer;
   padding: 0;
+  vertical-align: top;
 }
 .slide {
   position: relative;
@@ -1195,6 +1196,10 @@ button.current-slide {
   border-radius: 10px;
   z-index: 2;
   padding: 20px 25px 25px 25px;
+  display: none;
+}
+.modal-show {
+  display: block;
 }
 .modal form {
   display: flex;
