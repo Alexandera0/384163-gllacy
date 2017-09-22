@@ -5,17 +5,17 @@ var link = document.querySelector(".message-link");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".cross");
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
+var n = popup.querySelector("[type=text]");
 var email = popup.querySelector("[name=email]");
-var storage = localStorage.getItem("login");
+var storage = localStorage.getItem("n");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   if (storage) {
-    name.value = storage;
+    n.value = storage;
     email.focus();
   } else {
-    name.focus();
+    n.focus();
   }
 });
 close.addEventListener("click", function (evt) {
@@ -23,11 +23,11 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
 });
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
+  if (!n.value || !email.value) {
     evt.preventDefault();
     console.log("Нужно ввести имя и электронную почту");
   } else {
-    localStorage.setItem("login", name.value);
+    localStorage.setItem("login", n.value);
   }
 });
 window.addEventListener("keydown", function (evt) {
