@@ -182,6 +182,24 @@ button:focus,
   background-color: #f8f7f4;
   color: #323232;
 }
+.filters-container {
+  /*max-width: 1146px;*/
+  width: 100%;
+  outline: red 1px dashed;
+}
+.wrapper {
+  max-width: 1146px;
+  /*padding-left: 2%;*/
+  /*padding-right: 2%;*/
+  margin-left: auto;
+  margin-right: auto;
+  outline: green 1px dashed;
+}
+.filters-content {
+  margin-right: auto;
+  width: 665px;
+  outline: yellow 2px dashed;
+}
 .filters fieldset {
   border: none;
   font-family: "Roboto", Arial, sans-serif;
@@ -771,10 +789,18 @@ body {
   margin-right: 27px;
   margin-left: 4px;
   position: relative;
+}
+.catalog-page .site-navigation .menu-list-1 {
+  margin-top: 4px;
+}
+.index-page .site-navigation .menu-list-1 a:hover {
   margin-top: 4px;
 }
 .site-navigation .menu-list-2 {
   margin-right: 29px;
+}
+.index-page .price {
+  top: 227px;
 }
 .site-navigation .menu-list-2:hover a, .site-navigation .menu-list-3:hover a{
   margin-top: 4px;
@@ -966,7 +992,6 @@ p.product-item {
   cursor: pointer;
 }
 .category {
-  margin-left: 145px;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -975,8 +1000,8 @@ p.product-item {
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 105px;
   margin-bottom: 5px;
+  padding: 0;
 }
 .goods-navigation li {
   margin-right: 22px;
@@ -986,7 +1011,6 @@ p.product-item {
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 865px;
-  margin-left: 145px;
   padding: 0;
 }
 .about-us {
