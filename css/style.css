@@ -50,7 +50,7 @@ button:focus,
 }
 .button-login {
   background: url("../img/login.svg") no-repeat;
-  padding-left: 23px;
+  padding-left: 25px;
 }
 .user-navigation .full-basket {
   background-color: #ffffff;
@@ -89,12 +89,14 @@ button:focus,
   padding-left: 25px;
   height: 20px;
   color: #323232;
+  padding-top: 4px;
 }
 .button-basket {
   background: url("../img/basket.svg") no-repeat;
-  padding-left: 29px;
+  padding-left: 28px;
   padding-right: 15px;
   height: 20px;
+  padding-top: 4px;
 }
 .user-navigation a span {
   bottom: 15px;
@@ -192,7 +194,6 @@ button:focus,
 }
 .filters-content {
   margin-right: auto;
-  width: 665px;
 }
 .filters fieldset {
   border: none;
@@ -212,14 +213,14 @@ button:focus,
 .filters ul,
 .filters select,
 .range-controls,
-.filters input[type="button"],
+.filters button,
 .user-navigation li {
   height: 35px;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 20px;
 }
-.filters input[type="button"] {
+.filters button {
   margin-top: 20px;
   padding: 8px 27px 7px 29px;
   border: 2px solid white;
@@ -245,10 +246,10 @@ select::-ms-expand {
   background: url("../img/select-arrow.svg") no-repeat 168px 25px;
   background-size: 13px 13px;
 }
-.filters input[type="button"] {
+.filters button {
   color: white;
 }
-.filters input[type="button"]:hover {
+.filters button:hover {
   background: #ffffff;
   color: #323232;
 }
@@ -814,7 +815,6 @@ body {
 }
 .user-navigation a {
   text-decoration: none;
-  padding-top: 2px;
 }
 .user-navigation li {
   display: flex;
