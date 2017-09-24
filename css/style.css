@@ -183,22 +183,16 @@ button:focus,
   color: #323232;
 }
 .filters-container {
-  /*max-width: 1146px;*/
   width: 100%;
-  outline: red 1px dashed;
 }
 .wrapper {
   max-width: 1146px;
-  /*padding-left: 2%;*/
-  /*padding-right: 2%;*/
   margin-left: auto;
   margin-right: auto;
-  outline: green 1px dashed;
 }
 .filters-content {
   margin-right: auto;
   width: 665px;
-  outline: yellow 2px dashed;
 }
 .filters fieldset {
   border: none;
@@ -488,6 +482,7 @@ input[type=checkbox]:checked + label:before {
 }
 address {
   font-style: normal;
+  width: 250px;
 }
 .about-us {
   background: #ede2c8 url("../img/wafer-background.jpg") repeat;
@@ -509,7 +504,7 @@ address {
 }
 h1 {
   font-size: 60px;
-  line-height: 61px;
+  line-height: 58px;
 }
 .footer-social li {
   width: 40px;
@@ -802,6 +797,11 @@ body {
 .index-page .price {
   top: 227px;
 }
+.ruble {
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
 .site-navigation .menu-list-2:hover a, .site-navigation .menu-list-3:hover a{
   margin-top: 4px;
 }
@@ -1010,7 +1010,7 @@ p.product-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 865px;
+  min-width: 865px;
   padding: 0;
 }
 .about-us {
@@ -1199,6 +1199,7 @@ button.current-slide {
   flex-wrap: wrap;
   height: 50px;
   padding-left: 0;
+  line-height: 20px;
 }
 .footer-menu li {
   margin-right: 32px;
